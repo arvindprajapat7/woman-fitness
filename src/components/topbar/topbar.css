@@ -1,0 +1,13 @@
+.topbar{
+    /* background:var(--pc); */
+}
+.topbar a{
+    color:var(--sc);
+    text-decoration: none;
+    font-size:14px;
+}
+.topbar a svg{
+    color:var(--pc);
+    margin-right:10px;
+    font-size:18px;
+}

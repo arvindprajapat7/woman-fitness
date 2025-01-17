@@ -1,0 +1,38 @@
+.counterSection{
+    padding-top:100px;
+}
+.counterSection .counterCard{
+    background: var(--sc);
+    transform: skew(0deg, -8deg);
+    position: relative;
+}
+.counter{
+    font-size:4rem;
+    color:#FFBD13;
+    font-weight: bold;
+}
+.counterTitle{
+    font-size: 24px;
+    color:#fff;
+    font-weight: 400;
+}
+span.bottomShape {
+    position: absolute;
+    bottom: -69px;
+    right: 4px;
+    transform: rotate(8.3deg);
+    transform-origin: right;
+    z-index: -1;
+}
+span.topShape {
+    position: absolute;
+    top: -68px;
+    left: 6px;
+    transform: rotate(8.3deg);
+    transform-origin: left;
+    z-index: -1;
+}
+
+path {
+    fill: var(--pc);
+}

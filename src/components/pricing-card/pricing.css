@@ -1,0 +1,83 @@
+.pricing-card{
+    position: relative;
+    background: var(--sc);
+    z-index: 1;
+    transition: var(--tr1);
+}
+
+.pricing-card::before{
+    content: '';
+    position: absolute;
+    bottom:0;
+    right:0;
+    background: url('../../../public/images/pattern-1.png') no-repeat;
+    width:130px;
+    height:250px;
+    z-index: -1;
+    opacity: .2;
+}
+.pricing-card::after{
+    content: '';
+    position: absolute;
+    bottom:0;
+    right:0;
+    background: url('../../../public/images/pattern-2.png') no-repeat;
+    width:30px;
+    height:120px;
+    z-index: 0;
+}
+
+.price-col:nth-child(1) .plan-name{
+    background:yellow;
+}
+.price-col:nth-child(2) .plan-name,
+.price-col:nth-child(3) .plan-name{
+    background:#92ADC6;
+    color:#fff;
+}
+
+.price-col .price {
+    font-size:3rem;
+    color:var(--pc);
+    font-weight:bold
+}
+.price-col .price sub{
+    font-size:16px;
+    color:#fff;
+    font-weight: 400;
+}
+.pricing-card hr{
+    border-color:rgba(255,255,255,.4)
+}
+.pricing-card ul li .text {
+    color:#fff;
+    font-size:14px;
+}
+.pricing-card .fill_btn span,
+/* .pricing-card:hover .fill_btn, */
+.pricing-card.active .fill_btn{
+    background:var(--sc);
+}
+/* .pricing-card:hover, */
+/* .pricing-card:hover .fill_btn span, */
+.pricing-card.active .fill_btn span,
+.pricing-card.active{
+    background:var(--pc);
+}
+/* .pricing-card:hover .plan-name, */
+.pricing-card.active .plan-name{
+    background:var(--sc);
+    color:#fff;
+}
+/* .pricing-card:hover .price, */
+.pricing-card.active .price{
+    color:var(--sc);
+}
+/* .pricing-card:hover p, */
+.pricing-card.active p{
+    color:#fff;
+}
+/* .pricing-card:hover ul li .icon svg path, */
+.pricing-card.active ul li .icon svg path{
+    fill:#fff;
+}

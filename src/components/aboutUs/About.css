@@ -1,0 +1,47 @@
+.aboutUs{
+    background:url('../../../public/images/about-section-bg.png') no-repeat center/cover;
+    padding:100px 0px;
+}
+.nav-tabs{
+    transform: skewX(-10deg);
+    background: linear-gradient(89deg, #FF3C11 1.12%, #FF8139 44%);
+    margin-left:16px!important;
+}
+.nav-tabs::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:-20px;
+    width:10px;
+    height:100%;
+    background:var(--pc);
+}
+.nav-tabs .nav-link{
+    color:#fff;
+    border-radius: 0;
+    border:none;
+}
+.nav-tabs .nav-link:hover{
+    
+}
+.nav-tabs .nav-link span{
+    transform: skewX(10deg);
+    display: block;
+}
+
+.behind-circle{
+    left: 61%;
+    position: absolute;
+    top: 14%;
+    width: 25rem;
+    height: 25rem;
+    border: 4rem solid var(--pc);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.imageCol{
+    position: relative;
+    z-index: 1;
+}

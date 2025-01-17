@@ -1,0 +1,15 @@
+.innerBanner{
+    background:url('../../../public/images/inner_banner_bg.png') no-repeat center/cover;
+    padding:200px 0px 100px 0px;
+}
+
+.innerBanner h2{
+    font-size:4rem;
+    font-weight:bold;
+    color:var(--sc);
+}
+.innerBanner .breadcrumb a{
+    color:var(--pc);
+    font-weight:600;
+    text-decoration: none;
+}

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --pc:#ff8139;
+  --sc:#232323;
+  --dark-pc:#ed5600;
+  --gradient:linear-gradient(89deg, #FF8139 1.12%, #FF3C11 44%);
+  --clipPath:polygon(9% 0, 100% 0%, 91% 100%, 0% 100%);
+  --tr1:.3s ease;
+}
+*{
+  font-family: "Poppins", sans-serif;
+
+}
+a:hover, 
+a{
+  text-decoration: none;
+}
+input:focus,
+button:focus{
+  outline:none;
+  box-shadow: none;
+}
+p{
+  font-size:16px;
+  color:#666;
+  line-height: 24px;
+}
+.subTitle {
+  font-size: 14px;
+  color: #666;
+  line-height: 24px;
+}
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.hero-title span{
+  color:var(--pc)
+;}
+
+.upTitle{
+  font-size:18px;
+  color: #666;
+  font-weight:400;
+}
+
+.secTitle{
+  font-size:56px;
+  font-weight:bold;
+}
+.secTitle2{
+  font-size:2.5rem;
+}
+.secTitle span{
+  color:var(--pc);
+}
+.tr1{
+  transition: .4s ease;
+}
+.cp{cursor: pointer;}
+.obj_cover{object-fit: cover;}
+.oh{overflow: hidden;}
+/* error page css  */
+.error-page{
+  height: 100vh;
+  background: url('../public/images/hero-bg.png') no-repeat;
+}
+.error-page .error-title{
+  font-size:10rem;
+  font-weight: bold;
+
+}
+.error-page .error-subtitle{
+  font-size:2rem;
+}
+
+.icon-btn{
+  background:var(--pc);
+  border:none;
+
+}
+.icon-btn svg{
+  width:24px;
+}
+.icon-btn svg path{
+  fill:#fff;
+}
+
+
+@media(max-width:992px){
+  .hero-title {
+    font-size: 2rem;
+  } 
+  .secTitle{
+    font-size:  2rem;;
+  }
+}

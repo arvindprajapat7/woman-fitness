@@ -1,0 +1,73 @@
+.trainer-card{
+    position: relative;
+    border-right: 5px solid #f5f5f5;
+    margin-bottom: 200px;
+}
+.trainer-card .trainer-details{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    transform: skewY(-14deg);
+    transform-origin: right;
+}
+.trainer-card .trainer-name{
+    background:#f5f5f5;
+    font-size:3rem;
+    font-weight: bold;
+    color:var(--pc);
+}
+.trainer-card .trainer-type{
+    background:var(--pc);
+    color:#fff;
+    font-size:1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top:-10px;
+    margin-right:-5px;
+   
+}
+
+.trainer-card:hover{
+    border-color:var(--dark-pc);
+}
+.trainer-card:hover .trainer-name{
+    background:var(--gradient);
+    color:#fff;
+}
+.trainer-card:hover .trainer-type{
+    background:var(--sc);
+    color:var(--pc);
+}
+.trainer-card .social-links{
+    position: absolute;
+    top:0;
+    right:0;
+    opacity: 0;
+}
+.trainer-card:hover .social-links{
+    opacity: 1;
+}
+.trainer-card:hover .social-links li:nth-child(1) a{
+    transition-delay: .1s;
+}
+.trainer-card:hover .social-links li:nth-child(2) a{
+    transition-delay: .12s;
+}
+.trainer-card:hover .social-links li:nth-child(3) a{
+    transition-delay: .14s;
+}
+.trainer-card .social-links a{
+    width:50px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--gradient);
+    margin-bottom: 10px;
+    transform: skewY(-10deg);
+    transform-origin: right;
+}
+.trainer-card .social-links a svg path{
+    fill:#fff;
+}

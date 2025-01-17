@@ -1,0 +1,137 @@
+.testimonial{
+    background:url('../../../public/images/testimonial-bg.png') no-repeat bottom/cover;
+    padding: 100px 0px 150px 0px;
+    position: relative;
+    overflow: hidden;
+}
+.testimonial .authorImg{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:5px solid #fff;
+    margin:auto;
+}
+.feedback-text{
+    font-size: 10rem;
+    color: #fff;
+    text-align: center;
+    filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.1));
+    font-weight: bold;
+    opacity: .3;
+    position: absolute;
+    bottom: -60px;
+    margin: 0;
+    line-height: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.carousel-control-prev,
+.carousel-control-next{
+    width: 50px;
+    height: 50px;
+    background: var(--pc);
+    top: 50%;
+    opacity: 1;
+    transform: skewX(-9deg);
+}
+.carousel-control-prev span,
+.carousel-control-next span{
+    transform: skewX(11deg);
+}
+.anim_author{
+    border:5px solid #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    position: absolute;
+    animation: authorAnim 5s linear  infinite;
+    animation-direction: alternate;
+}
+.anim_author{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius:50%;
+}
+.anim_author.anim_author1{
+    width:100px;
+    height:100px;
+    left:10%;
+    top:10%;
+}
+.anim_author.anim_author2{
+    width:60px;
+    height:60px;
+    right:10%;
+    top:10%;
+    animation-delay: 1s;
+}
+.anim_author.anim_author3{
+    width:100px;
+    height:100px;
+    left:5%;
+    bottom:20%;
+    animation-delay: 2s;
+}
+.anim_author.anim_author4{
+    width:100px;
+    height:100px;
+    right:10%;
+    bottom:10%;
+    animation-delay: 3s;
+}
+.anim_author.anim_author5{
+    width:50px;
+    height:50px;
+    right:5%;
+    top:50%;
+    animation-delay: 4s;
+}
+
+@keyframes authorAnim {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    25% {
+        -webkit-transform: translate(-15px, -15px);
+        transform: translate(-15px, -15px);
+    }
+    50% {
+        -webkit-transform: translate(-8px, -8px);
+        transform: translate(-8px, -8px);
+    }
+    75% {
+        -webkit-transform: translate(-15px, 8px);
+        transform: translate(-15px, 8px);
+    }
+    to {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+@media(max-width:992px){
+    .feedback-text{
+        font-size:9.5rem;
+    }
+    .carousel-control-prev{
+        left: calc(50% - 60px);
+        top:113%;
+    }
+    .carousel-control-next{
+        right:calc(50% - 60px);
+        top:113%;
+    }
+}
+@media(max-width:768px){
+    .feedback-text{
+        font-size:8.5rem;
+    }
+    .anim_author{
+        display: none;
+    }
+}
+@media(max-width:575px){
+    .feedback-text{
+        font-size:3.5rem;
+    }
+}

@@ -1,0 +1,44 @@
+.call-us .call-icon{
+    width:70px;
+    height:70px;
+    border-left:4px solid var(--pc);
+    transform: skewX(-10deg);
+    box-shadow: 0px 10px 30px 0px rgba(255, 129, 57, 0.15);
+    background:#fff;
+}
+.call-us .call-icon svg{
+    font-size: 30px;
+    animation: shakeIcon 1.4s  infinite;
+    animation-direction: alternate;
+}
+@keyframes shakeIcon {
+    0% { transform: rotate(0); }
+    10% { transform: rotate(-15deg); }
+    20% { transform: rotate(20deg); }
+    30% { transform: rotate(-24deg); }
+    40% { transform: rotate(21deg); }
+    50% { transform: rotate(-18deg); }
+    60% { transform: rotate(14deg); }
+    70% { transform: rotate(-11deg); }
+    80% { transform: rotate(7deg); }
+    90% { transform: rotate(-3deg); }
+    100% { transform: rotate(1deg); }
+  }
+.call-us .call-icon svg path{
+    stroke:var(--pc);
+    fill:#fff;
+}
+.call-us .call-details h6{
+    font-size:16px;
+    font-weight:500;
+}
+.call-us .call-details h2 a{
+    font-size:30px;
+    font-weight:bold;
+    color:var(--sc);
+    text-decoration: none;
+
+}
+.call-us .call-details h2 a:hover{
+    color:var(--pc);
+}

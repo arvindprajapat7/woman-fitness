@@ -1,0 +1,52 @@
+.image-card{
+    border:10px solid #fff;
+    animation: imageAnim 3s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes imageAnim{
+    from{
+        transform: rotate(-2deg);
+    }to{
+        transform: rotate(2deg);
+    }
+}
+.image-card figcaption{
+    position: absolute;
+    top:60%;
+    background:#fff;
+    border-left:4px solid var(--pc);
+    transform: skewX(-10deg);
+    min-width:220px;
+    animation: figcaptionAnim 3s linear infinite;
+    animation-direction: alternate;
+    transform: skewX(-10deg);
+}
+@keyframes figcaptionAnim{
+    0%{
+        transform: translate(10px, -10px);
+    }40%{
+        transform: translate(-10px, 0px);
+    }100%{
+        transform: translate(10px, 10px);
+    }
+}
+.image-card figcaption svg{
+    font-size:30px;
+    margin-right:10px;
+}
+
+.image-card.leftOrigin {
+    transform-origin: left;
+}
+
+@media(max-width:575px){
+    .image-card figcaption{
+        display: none;
+    }
+    .behind-circle {
+        left: 56%;
+        width: 15rem;
+        height: 15rem;
+     
+    }
+}

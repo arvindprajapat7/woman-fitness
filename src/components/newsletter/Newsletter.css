@@ -1,0 +1,26 @@
+.newsletter .newsletter_card{
+    background:var(--pc);
+}
+.newsletter .newsletter_title{
+    font-size:3rem;
+    font-weight:bold;
+    color:#fff;
+}
+.newsletter p{
+    color:#fff;
+}
+
+
+.newsletter .newsletter_form .inputWrapper{
+    width:100%;
+    transform: skewX(-25deg);
+}
+.newsletter .newsletter_form .inputWrapper input{
+    transform: skewX(25deg);
+    background:transparent;
+    color:var(--sc);
+}
+.newsletter .fill_btn{
+    background: var(--sc);
+    white-space: nowrap;
+}

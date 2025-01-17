@@ -1,0 +1,21 @@
+.fill_btn{
+    background:var(--pc);
+    text-decoration: none;
+    font-size:16px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    clip-path: var(--clipPath);
+}
+.fill_btn span{
+    position: absolute;
+    top: -6px;
+    right: 27px;
+    width: 6px;
+    height: calc(100% + 10px);
+    background-color: #fff;
+    display: block;
+    overflow: auto;
+    transform: rotate(22deg);
+    transform-origin: bottom;
+}

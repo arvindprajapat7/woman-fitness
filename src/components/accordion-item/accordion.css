@@ -1,0 +1,39 @@
+.accordion-header .accordion-button{
+    background-color:rgba(255,129,57,0.1);
+    /* clip-path: polygon(4% 0, 100% 0%, 96% 100%, 0% 100%); */
+}
+.accordion-header .accordion-button::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--pc);
+    z-index: 10;
+    /* transform: skewX(-24deg); */
+    transform-origin: bottom;
+}
+.accordion-button::after {
+    background-color:var(--pc);
+    padding: 10px;
+    width: 26px;
+    height: 26px;
+    background-position: center;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.faq-ul{
+    column-count: 2;
+    gap: 50px;
+}
+
+@media(max-width:991px){
+    .faq-ul{
+        column-count:1;
+    }
+}
+
+
+

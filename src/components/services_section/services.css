@@ -1,0 +1,169 @@
+.sectionHead::before{
+    content: '';
+    position: absolute;
+    left:0;
+    top:0;
+    width:20px;
+    height:100%;
+    transform: skewX(-10deg);
+    background:linear-gradient( #FF3C11 10%, #FF8139 40%);
+}
+.serviceCard{
+    z-index: 1;
+}
+.serviceCard::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(255,129,57,0.1);
+    transform: skewY(-5deg);
+    z-index: -1;
+}
+.serviceCard .iconImg{
+    width:120px;
+    height:120px;
+    margin-top:-70px;
+    margin-bottom: 30px;
+    background:#fff;
+    box-shadow: 0px -10px 50px 0px rgba(255,129,57,0.2);
+    z-index: 1;
+    position: relative;
+}
+.serviceCard .iconImg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+}
+.serviceCard:hover img{
+    animation: shakeIcon 1.2s linear;
+}
+.serviceCard:hover::before{
+    background:var(--pc);
+}
+.serviceCard h4{
+    font-size:20px;
+    font-weight:600;
+}
+.serviceCard:hover .ser_details h4,
+.serviceCard:hover .ser_details p{
+    color:#fff!important;
+}
+.serviceCard p{
+    font-size: 16px;
+    color:#242424;
+    margin-bottom: 30px;
+}
+@keyframes shakeIcon {
+    0% { transform: rotate(0); }
+    10% { transform: rotate(-15deg); }
+    20% { transform: rotate(20deg); }
+    30% { transform: rotate(-24deg); }
+    40% { transform: rotate(21deg); }
+    50% { transform: rotate(-18deg); }
+    60% { transform: rotate(14deg); }
+    70% { transform: rotate(-11deg); }
+    80% { transform: rotate(7deg); }
+    90% { transform: rotate(-3deg); }
+    100% { transform: rotate(1deg); }
+  }
+
+  .serviceCard:hover .fill_btn{
+    background:#fff;
+    color:var(--pc)!important;
+  }
+  .serviceCard:hover .fill_btn span{
+    background: var(--pc);
+}
+.service-detail .cat-list li{
+    z-index: 1;
+    position: relative;
+}
+.service-detail .cat-list li:before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:-10%;
+    width:100%;
+    height:100%;
+    background:var(--pc);
+    clip-path:var(--clipPath);
+    z-index: -1;
+    opacity: 0;
+    transition: var(--tr1);
+}
+.service-detail .cat-list li:hover:before,
+.service-detail .cat-list li.active:before{
+    left:-14%;
+    opacity: 1;
+}
+
+.service-card-col{
+    margin-bottom: 100px;
+}
+.service-detail .cat-list{
+    background:var(--sc);
+    position: relative;
+    z-index: 0;
+}
+.service-detail .cat-list::before,
+.service-detail .help-card::before{
+    content: '';
+    position: absolute;
+    bottom:0;
+    right:0;
+    background: url('../../../public/images/pattern-1.png') no-repeat;
+    width:130px;
+    height:250px;
+    z-index: -1;
+}
+.service-detail .cat-list::after{
+    content: '';
+    position: absolute;
+    bottom:0;
+    right:0;
+    background: url('../../../public/images/pattern-2.png') no-repeat;
+    width:30px;
+    height:120px;
+    z-index: 0;
+}
+.service-detail .bottom-shape{
+    transform: rotate(8deg);
+    display: block;
+    transform-origin: bottom;
+    margin-top: -40px;
+    z-index: -1;
+    position: relative;
+}
+.service-detail .help-card{
+    background:var(--pc)
+}
+.service-detail .help-card .icon{
+    font-size:80px;
+    color:white;
+    margin:auto; 
+    margin-bottom: 20px;
+}
+.service-detail .help-card  svg path{
+    fill:#fff;
+}
+.service-detail .help-card .fill_btn{
+    background:var(--sc)
+}
+.service-detail .help-card .fill_btn span{
+    background:var(--pc)
+}
+.service-detail .help-card p a.phNumber{
+    font-size:28px;
+    text-decoration: none;
+}
+.service-detail .help-card p a.email{
+    text-decoration:none;
+}

@@ -1,0 +1,21 @@
+.perfect_trainer{
+    background:url('../../../public/images/about-bg.png') no-repeat top/cover;
+
+}
+.perfect_trainer .card{
+    border-left:5px solid #ff81396e!important;
+    transform: skew(-5deg);
+    cursor: pointer;
+    transition: .4s ease;
+}
+.perfect_trainer .card:hover{
+    border-left:5px solid var(--pc)!important;
+
+}
+.wrapper{
+    transform: skew(5deg);
+}
+.perfect_trainer .card h5{
+    font-size:16px;
+
+}

@@ -1,0 +1,15 @@
+.hero-section{
+    background:url('../../../public/images/hero-bg.png') no-repeat center/cover;
+    padding:150px 0px 0px 0px;
+}
+.hero-title {
+    padding-left: 30px;
+    border-left: 5px solid var(--pc);
+}
+
+
+@media(max-width:768px){
+    .hero-section{
+        background-position: left;
+    }
+}
