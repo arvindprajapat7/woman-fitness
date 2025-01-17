@@ -45,9 +45,9 @@ const AboutUs = () => {
                     <CallUs/>
                 </div>
                 <div className='col-lg-6 position-relative imageCol'>
-                    <Image_thumb imgUrl="../../public/images/couple-workout1.jpg" imgDirection="left" />
+                    <Image_thumb imgUrl="../images/couple-workout1.jpg" imgDirection="left" />
                     <br/><br/>
-                    <Image_thumb imgUrl="../../public/images/couple-workout2.jpg" imgDirection="right" />
+                    <Image_thumb imgUrl="../images/couple-workout2.jpg" imgDirection="right" />
                     <div className='behind-circle'>
                     </div>
                 </div>

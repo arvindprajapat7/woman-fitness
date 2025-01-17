@@ -1,6 +1,8 @@
 .aboutUs{
     background:url('../../../public/images/about-section-bg.png') no-repeat center/cover;
     padding:100px 0px;
+    position: relative;
+    z-index: 0;
 }
 .nav-tabs{
     transform: skewX(-10deg);

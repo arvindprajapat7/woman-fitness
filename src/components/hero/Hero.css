@@ -1,6 +1,8 @@
 .hero-section{
     background:url('../../../public/images/hero-bg.png') no-repeat center/cover;
     padding:150px 0px 0px 0px;
+    position: relative;
+    z-index: 0;
 }
 .hero-title {
     padding-left: 30px;
